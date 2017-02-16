@@ -42,9 +42,11 @@ a {
 }
 
 .contwidth {
-	max-width: 960px;
+	max-width: 980px;
 	text-align: center;
 	margin: auto;
+	padding: 0 10px;
+	position: relative;
 }
 
 .reg_btn {
@@ -82,10 +84,9 @@ a {
 	position: relative;
 	height: 9%;
 	background-color: rgba(255, 255, 255, 0.50);
-}
+	}
 
 .menu {
-	display: inline-block;
 	float: right;
 }
 
@@ -156,6 +157,7 @@ ul.aful li {
 
 .afli {
 	width: 15%;
+	min-width: 150px;
 	vertical-align: top;
 }
 
@@ -179,13 +181,14 @@ ul.aful li {
 	background: url(../img/3_imgbg.jpg) no-repeat;
 	background-color: #f3af42;
 	background-size: cover;
-	height: 680px;
-	position: relative;
+	padding-top: 54.58%;
 }
 
 .img1txt{
 	position: absolute;
 	bottom: 0;
+	left: 0;
+	text-align: left;
 }
 
 .h1left {
@@ -198,7 +201,6 @@ ul.aful li {
 .whywe {
 	background: url(../img/4_imgbg.png) no-repeat;
 	background-size: cover;
-	height: 400px;
 	position: relative;
 	padding: 30px 0 30px 0;
 }
@@ -208,6 +210,7 @@ ul.whyul li {
 	display: inline-block;
 	padding: 10px 20px;
 	width: 20%;
+	min-width: 200px;
 	vertical-align: top;
 }
 
@@ -222,10 +225,10 @@ ul.whyul li {
 
 .whyimg {
 	width: 160px;
-	font-family: Ubuntu-Bold;
+	font-family: Ubuntu;
 	font-size: 48px;
 	color: #B70F1B;
-	letter-spacing: -1.16px;
+	font-weight: 700;
 	text-align: center;
 	line-height: 160px;
 	margin: auto;
@@ -272,6 +275,7 @@ ul.howul li {
 	display: inline-block;
 	padding: 10px 20px;
 	width: 20%;
+	min-width: 200px;
 	vertical-align: top;
 }
 
@@ -281,13 +285,19 @@ ul.howul li {
 
 .howli::after {
 	background: url(../img/4_arrow.svg) no-repeat;
-	position: absolute;
-	width: 120px;
-	height: 3px;
-	top: 50px;
-	left: 100px;
-	z-index: 2;
+   background-size: contain;
+   position: absolute;
+   width: 120px;
+   height: 12px;
+   top: 50px;
+   left: 75%;
+   z-index: 2;
+   content: '';
 }
+
+.howli:last-child::after { 
+	display: none;
+	}
 
 .howimg {
 	width: 80px;
@@ -316,7 +326,7 @@ ul.howul li {
 	background: url(../img/5_imgbg.jpg) no-repeat;
 	background-color: #f3af42;
 	background-size: cover;
-	height: 600px;
+	padding-top: 54.58%;
 	position: relative;
 }
 
@@ -325,40 +335,54 @@ ul.howul li {
 	bottom: 0;
 	left: 0;
 	right: 0;
+	text-align: center;
 }
 
 /* contacts */
 
 .contacts {
 	background-color: #f3af42;
-	height: 380px;
+	font-size: 0;
+	padding: 0 10%;
 }
 
 .contactinfo {
-	float: left;
+	display: inline-block;
 	text-align: left;
-	position: relative;
-	width: 40%;
+   	width: 35%;
+}
+
+.map {
+	display: inline-block;
+	border: 0;
+	width: 60%;
+	/* height: 100%; */
+	
 }
 
 .h2cont {
-	padding: 32px 0 49px 60px;
+	padding: 30px 0 5% 40px;
+	font-family: Ubuntu;
+	font-size: 36px;
 }
 
 .contli {
 	padding: 15px 0;
+	vertical-align: middle;
 }
 
 .imgcont1 {
 	width: 17px;
 	object-fit: contain;
 	display: inline-block;
+	margin: 0 4px 0 0;
 }
 
 .imgcont2 {
 	width: 19px;
 	object-fit: contain;
 	display: inline-block;
+	margin: 0 2px 0 0;
 }
 
 .imgcont3 {
@@ -371,11 +395,8 @@ ul.howul li {
 	font-family: OpenSans;
 	font-size: 14px;
 	color: #4a1c00;
-	position: absolute;
-	left: 60px;
-	line-height: 20px;
+	padding: 0 0 0 20px;
 	display: inline-block;
-	vertical-align: middle;
 }
 
 /* responsive */
@@ -422,4 +443,13 @@ ul.howul li {
  	.wmimg {
  		width: 50%;
  	}
+
+ 	 .contactinfo {
+      	width: 100%;
+  	}
+
+  	.map {
+  		position: static;
+   		margin: 20px 0;
+  	}
  }
