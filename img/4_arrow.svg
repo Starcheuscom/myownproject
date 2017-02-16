@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="126px" height="10px" viewBox="0 0 126 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Desktop" transform="translate(-210.000000, -2349.000000)" stroke="#F3AF42" stroke-width="2">
+            <g id="Howwe" transform="translate(41.000000, 2209.000000)">
+                <path d="M170.5,145 L291,145" id="Line"></path>
+                <path id="Line-decoration-1" d="M291,145 L280.2,142 L280.2,148 L291,145 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>
