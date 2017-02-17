@@ -440,7 +440,8 @@ ul.howul li {
  		top: 100%;
  	}
 
- 	input:checkbox + .top {margin-top: 100px}
+
+	#menu-checkbox:checked + .top {margin-top: 100px}`
 
 /* 
  	.wmimg {
