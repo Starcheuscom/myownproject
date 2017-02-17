@@ -407,7 +407,7 @@ ul.howul li {
  		float: right;
  		margin: 0 20px 0 0;
  		display: block;
- 		background-image: url(../img/menu-ico.svg);
+ 		background-image: url(../img/menu-ico-e.svg);
  		background-size: contain;
  		background-repeat: no-repeat;
  		background-color: transparent;
@@ -428,11 +428,11 @@ ul.howul li {
  	}
 
  	#menu-checkbox:checked ~ .menu-btn {
- 		background-image: url(../img/menu-ico-ch.svg);
+ 		background-image: url(../img/menu-ico-x.svg);
  		z-index: 3;
  	}
 
- 	#menu-checkbox:checked ~ .menu {
+ 	#menu-checkbox:checked + .top .menu {
  		display: block;
  		position: absolute;
  		left: 0;
@@ -440,9 +440,12 @@ ul.howul li {
  		top: 100%;
  	}
 
+ 	input:checkbox + .top {margin-top: 100px}
+
+/* 
  	.wmimg {
  		width: 50%;
- 	}
+ 	} */
 
  	 .contactinfo {
       	width: 100%;
