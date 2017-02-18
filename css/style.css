@@ -391,7 +391,7 @@ ul.howul li {
 
  .google-maps {
         position: relative;
-        padding-bottom: 25%; // This is the aspect ratio
+        padding-bottom: 30%; // This is the aspect ratio
         height: 0;
         overflow: hidden;
     }
@@ -493,19 +493,14 @@ ul.howul li {
  	}
 
 
-	#menu-checkbox:checked + .top {margin-top: 100px}`
-
-/* 
- 	.wmimg {
- 		width: 50%;
- 	} */
+	#menu-checkbox:checked + .top {margin-top: 100px}
 
  	 .contactinfo {
       	width: 100%;
   	}
 
-  	.map {
-  		position: static;
-   		margin: 20px 0;
+  	.google-maps {
+   		width: 100%;
+   		height: 200px;
   	}
  }
