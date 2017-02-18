@@ -443,6 +443,13 @@ ul.howul li {
 	display: inline-block;
 }
 
+.contacts::after {
+        content: ' ';
+        display: table;
+        overflow: hidden;
+        clear: both;
+}
+
 /* responsive */
 @media screen and (max-width: 768px) {
 .menu {
