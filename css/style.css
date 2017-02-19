@@ -468,11 +468,12 @@ ul.howul li {
  		height: 50px;
  	}
  	.menu-points {
- 		background: white;
- 		padding: 10px;
+ 		background: ##f3af42;
+ 		padding: 20px;
  	}
  	.menu-points li {
  		display: block; 
+ 		margin: 10px;
  	}
 
  	#menu-checkbox:checked ~ menu {
